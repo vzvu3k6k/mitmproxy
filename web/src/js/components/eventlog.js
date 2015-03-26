@@ -117,6 +117,7 @@ var ToggleFilter = React.createClass({
 });
 
 var EventLog = React.createClass({
+    mixins: [common.Navigation, common.State],
     getInitialState: function () {
         return {
             filter: {
